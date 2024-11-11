@@ -1,89 +1,51 @@
-![Astro Sphere Lighthouse Score](_astrosphere.jpg)
+# My Personal Blog
 
-Astro Sphere is a static, minimalist, lightweight, lightning fast portfolio and blog theme based on my personal website.
+This is the repository for my personal blog website, built using Astro, a modern static site generator. The blog is hosted at [mdhn.my.id](https://mdhn.my.id).
 
-It is primarily Astro, Tailwind and Typescript, with a very small amount of SolidJS for stateful components.
+## About the Project
 
-## 🚀 Deploy your own
+My personal blog is a platform where I share my thoughts, experiences, and insights on various topics. The goal is to create an engaging and informative space for readers to learn and connect.
 
-[![Deploy with Vercel](_deploy_vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-sphere)  [![Deploy with Netlify](_deploy_netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-sphere)
+Some key features of the blog include:
 
-## 📋 Features
+- Astro-powered: The website is built using the Astro framework, leveraging its powerful static site generation capabilities.
+- Responsive Design: The blog is designed to provide an optimal viewing experience across different devices and screen sizes.
+- Markdown Support: Blog posts are written in Markdown, allowing for easy content creation and formatting.
+- Syntax Highlighting: Code snippets in blog posts are highlighted for improved readability.
+- SEO Optimized: The website is optimized for search engines, ensuring better visibility and discoverability.
+- Deployment: The blog is deployed using GitHub Pages, providing a reliable and scalable hosting solution.
 
-- ✅ 100/100 Lighthouse performance
-- ✅ Responsive
-- ✅ Accessible
-- ✅ SEO-friendly
-- ✅ Typesafe
-- ✅ Minimal style
-- ✅ Light/Dark Theme
-- ✅ Animated UI
-- ✅ Tailwind styling
-- ✅ Auto generated sitemap
-- ✅ Auto generated RSS Feed
-- ✅ Markdown support
-- ✅ MDX Support (components in your markdown)
-- ✅ Searchable content (posts and projects)
+## Getting Started
 
-## 💯 Lighthouse score
-![Astro Sphere Lighthouse Score](_lighthouse.png)
+To run the blog locally, follow these steps:
 
-## 🕊️ Lightweight
-All pages under 100kb (including fonts)
+1. Clone the repository:
+   ```
+   git clone https://github.com/mhdramadhanarvin/mdhn.my.id
+   ```
+2. Navigate to the project directory:
+   ```
+   cd mdhn.my.id
+   ```
+3. Install dependencies:
+   ```
+   pnpm install
+   ```
+4. Start the development server:
+   ```
+   pnpm dev
+   ```
+5. Open your browser and visit `http://localhost:4321` to see the blog in action.
 
-## ⚡︎ Fast
-Rendered in ~40ms on localhost
+## Contribute
 
-## 📄 Configuration
+If you'd like to contribute to the development of this blog, feel free to submit a pull request. I welcome any suggestions, bug fixes, or feature enhancements that can improve the overall user experience.
 
-The blog posts on the demo serve as the documentation and configuration.
+## Contact
 
-## 💻 Commands
+For any questions or inquiries, you can reach me at:
 
-All commands are run from the root of the project, from a terminal:
+- Email: [mramadhan687@gmail.com](mailto:mramadhan687@gmail.com)
+- LinkedIn: [muhammad-ramadhan-arvin](https://www.linkedin.com/in/muhammad-ramadhan-arvin)
 
-Replace npm with your package manager of choice. `npm`, `pnpm`, `yarn`, `bun`, etc
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run dev:network`     | Starts dev server on local network               |
-| `npm run sync`            | Generates TypeScript types for all Astro modules.|
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run preview:network` | Starts preview server on local network           |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-| `npm run lint`            | Run ESLint                                       |
-| `npm run lint:fix`        | Auto-fix ESLint issues                           |
-
-## 🗺️ Roadmap
-
-A few features I plan to implement
-- ⬜ Code Blocks - copy to clipboard
-- ⬜ Article Pages - Table of Contents
-- ⬜ Article Pages - Share on social media
-
-## ✨ Acknowledgement
-
-Theme inspired by [Paco Coursey](https://paco.me/), [Lee Robinson](https://leerob.io/) and [Hayden Bleasel](https://www.haydenbleasel.com/)
-
-
-## 🏛️ License
-
-MIT
-
-
-# 1.0.1 Update
-
-Added ability to run dev and preview on local network.
-added npm run dev:network
-added npm run preview:network
-
-Added slightly more particle density in both light and dark mode.
-
-Added subtle dark mode star and meteor animations.
-
-Removed eslint config
-
+Thank you for your interest in my personal blog!
