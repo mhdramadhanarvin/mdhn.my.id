@@ -39,6 +39,7 @@ const stack = [
     href: "https://tailwindcss.com" 
   },
 ]
+
 ---
 
 <PageLayout title="Home" description={SITE.DESCRIPTION}>
@@ -82,19 +83,17 @@ const stack = [
           <p class='animated text-lg md:text-xl lg:text-2xl font-semibold opacity-75'>
             Hello, I am ...
           </p>
-          <p class='animated text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-black dark:text-white'>
-            Astro Sphere
-          </p>
-          <p class='animated text-sm md:text-base lg:text-lg opacity-75'>
-            Currently designing products for humans.
-          </p>
+          <p class='animated text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-black bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% inline-block text-transparent bg-clip-text'>{SITE.TITLE}</p>
+          <div class='text-sm md:text-base lg:text-2xl opacity-75 font-bold w-max'>
+<div class="w-max">
+              <h5 class="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-2xl text-white font-bold">Talking about Software, Cloud, and Infrastructure...</h5>
+  </div>
+          </div>
           <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
             <a href='/blog' class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>
               Read my blog
             </a>
-            <a href='/work' class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>
-              View my work
-            </a>
+            <a href='/about' class='py-2 px-4 truncate rounded text-xs md:text-sm lg:text-base border border-black/25 dark:border-white/25 hover:bg-black/5 hover:dark:bg-white/15 blend'>Hire Me</a>
           </div>
         </div>
       </div>
@@ -107,12 +106,9 @@ const stack = [
       <!-- About Section -->
       <section class="animate">
         <article>
-          <p>I am a <b><i>software engineer</i></b>, <b><i>ui/ux designer</i></b>, <b><i>product planner</i></b>, <b><i>mentor</i></b>, <b><i>student</i></b>, <b><i>minimalist</i></b>, <b><i>eternal optimist</i></b>, <b><i>crypto enthusiast</i></b> and <b><i>sarcasm connoisseur</i></b>.</p>
-          <p>I love to both build and break things. I am motivated by challenging projects with self-guided research and dynamic problem solving. My true passion is crafting creative front end designs with unique takes on color, typography and motion.</p>
-          <p>During my career</p>
-          <p>I have built products ranging from marketing and ecommerce websites to complex enterprise apps with focus on delivering fast, elegant code along with delightful user interfaces.</p>
-          <p>Now</p>
-          <p>I currently work as a software engineer at StreamlineFS, where I do product planning, design and development.</p>
+          <p class="text-justify">
+            I’m an Infrastructure Engineer with 6+ years of experience in building powerful, resilient applications and infrastructure. From crafting robust software with Laravel, NestJS, Next.js, and React to leveraging the full potential of PHP, TypeScript, and Golang, I’m passionate about creating efficient solutions. My DevOps expertise spans building infrastructure as code with Terraform and Pulumi, automating configurations with Ansible, and setting up CI/CD pipelines with GitLab CI and GitHub Actions. I prioritize reliability, ensuring 99% uptime with thorough monitoring, metrics, and logging. In my blog, I share insights on software, cloud, and infrastructure, aiming to inspire and guide readers toward best practices in development and operations.
+          </p>
         </article>
       </section>
 
@@ -120,9 +116,9 @@ const stack = [
       <section class="animate">
         <div class="space-y-4">
           <div class="flex justify-between">
-            <p class="font-semibold text-black dark:text-white">
+            <h2 class="font-semibold text-black dark:text-white text-2xl">
               Recent posts
-            </p>
+            </h2>
             <a href="/blog" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
               <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
                 All posts
@@ -169,9 +165,9 @@ const stack = [
       <section class="animate">
         <div class="space-y-4">
           <div class="flex justify-between">
-            <p class="font-semibold text-black dark:text-white">
+            <h2 class="font-semibold text-black dark:text-white text-2xl">
               Recent projects
-            </p>
+            </h2>
             <a href="/projects" class="w-fit col-span-3 group flex gap-1 items-center underline decoration-[.5px] decoration-black/25 dark:decoration-white/50 hover:decoration-black dark:hover:decoration-white text-black dark:text-white underline-offset-2 blend">
               <span class="text-black/75 dark:text-white/75 group-hover:text-black group-hover:dark:text-white blend">
                 All projects
@@ -191,9 +187,9 @@ const stack = [
       <!-- Contact Section -->
       <section class="animate">
         <div>
-          <p class="font-semibold text-black dark:text-white">
+          <h2 class="font-semibold text-black dark:text-white text-2xl">
             Let's Connect
-          </p>
+          </h2>
           <p>
             Reach out to me via email or on social media.
           </p>

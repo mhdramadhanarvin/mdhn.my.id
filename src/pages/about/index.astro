@@ -1,0 +1,38 @@
+---
+import PageLayout from "@layouts/PageLayout.astro"
+import TopLayout from "@layouts/TopLayout.astro"
+import BottomLayout from "@layouts/BottomLayout.astro"
+import { HIRE} from "@consts"
+---
+
+<PageLayout title={HIRE.TITLE} description={HIRE.DESCRIPTION}>
+  <TopLayout>
+    <div class="animate page-heading">
+      <h1 class="text-2xl">
+      {HIRE.TITLE}
+      </h1>
+      <p class="pt-5 text-justify">
+        I am an Infrastructure Engineer with 6+ years of experience in building and maintaining robust software systems. Throughout my career, I’ve developed a wide range of applications using frameworks like Laravel, NestJS, Next.js, and React, leveraging my expertise in PHP, TypeScript, and Golang.
+
+      </p>
+      <p class="pt-3 text-justify">
+        In addition to software development, I bring extensive experience in DevOps and infrastructure engineering. I build scalable, resilient infrastructure as code using Terraform and Pulumi (with Golang), and I work with configuration management tools like Ansible to streamline deployments. My focus on reliability led me to implement CI/CD pipelines with GitLab CI and GitHub Actions, automate testing for faster feedback, and establish monitoring, metrics, and logging systems that support up to 99% application uptime.
+
+      </p>
+      <p class="pt-3 text-justify">
+        I’m passionate about creating seamless developer experiences and ensuring that systems stay resilient and responsive under any load.
+      </p>
+    </div>
+    <div class="animate page-heading pt-5">
+      <h1 class="text-2xl">
+        Hire He
+      </h1>
+      <p class="py-5">
+        Thank you for your interest to collaborate with me. I love to hear more about it. I also offer 1 hour free discussion for understand your need or share my thought about your need.
+      </p>
+      <iframe src="https://tally.so/r/mYzLNN" class="w-full h-[480px]"/>
+    </div>
+  </TopLayout>
+  <BottomLayout>
+  </BottomLayout>
+</PageLayout>
