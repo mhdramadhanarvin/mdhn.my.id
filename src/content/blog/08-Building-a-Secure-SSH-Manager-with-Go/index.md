@@ -1,7 +1,8 @@
 ---
 title: "Building a Secure SSH Manager with Go"
-description: "A deep dive into creating a CLI tool for managing SSH profiles with encryption and cloud sync"
-date: 2026-03-15
+summary: "A deep dive into creating a CLI tool for managing SSH profiles with encryption and cloud sync"
+date: "Mar 15 2026"
+draft: false
 tags:
   - go
   - ssh
