@@ -21,8 +21,6 @@ This article walks you through building **SSH Manager**, a command-line tool tha
 
 > **Prerequisites**: Basic familiarity with Go, understanding of SSH fundamentals, and a Google Cloud project for OAuth2 credentials.
 
----
-
 ## Table of Contents
 
 1. [The Problem: Managing SSH Credentials at Scale](#1-the-problem-managing-ssh-credentials-at-scale)
@@ -43,8 +41,6 @@ This article walks you through building **SSH Manager**, a command-line tool tha
 7. [What's Next?](#7-whats-next)
 8. [Conclusion](#8-conclusion)
 
----
-
 ## 1. The Problem: Managing SSH Credentials at Scale
 
 If you're like most DevOps engineers or system administrators, you probably have:
@@ -60,8 +56,6 @@ Juggling `~/.ssh/config` files or keeping notes in password managers isn't ideal
 - **Portable** - accessible across your machines
 - **Fast** - quick connections without hassle
 
----
-
 ## 2. The Solution: Introducing SSH Manager
 
 I built a Go-based CLI tool that stores SSH profiles securely and optionally syncs them to Google Drive. Here's what makes it special:
@@ -70,8 +64,6 @@ I built a Go-based CLI tool that stores SSH profiles securely and optionally syn
 - **Dual authentication** - supports both passwords and private keys
 - **Cloud sync** - backup and restore profiles from Google Drive
 - **Zero dependencies** - runs anywhere Go compiles
-
----
 
 ## 3. Architecture Overview
 
@@ -119,8 +111,6 @@ The optional cloud sync uses OAuth2 with the following flow:
 1. Authenticate using `GOOGLE_CLIENT_ID` and `GOOGLE_CLIENT_SECRET` environment variables
 2. Token is cached locally for subsequent operations
 3. Profiles are uploaded/downloaded as `sshmanager_profiles.enc`
-
----
 
 ## 4. Usage Guide
 
@@ -172,8 +162,6 @@ sshmanager setting
 sshmanager sync
 ```
 
----
-
 ## 5. Key Implementation Details
 
 ### Private Key Handling
@@ -210,8 +198,6 @@ func addProfile(dir string) {
 }
 ```
 
----
-
 ## 6. Why Go?
 
 I chose Go for this project because:
@@ -220,8 +206,6 @@ I chose Go for this project because:
 2. **Standard library** - minimal external dependencies
 3. **Performance** - fast startup, low memory footprint
 4. **Crypto packages** - excellent `crypto` and `golang.org/x/crypto` support
-
----
 
 ## 7. What's Next?
 
@@ -232,14 +216,10 @@ Future improvements I'm considering:
 - **TOTP support** - for servers with 2FA
 - **SSH agent integration** - leverage existing ssh-agent
 
----
-
 ## 8. Conclusion
 
 SSH Manager has become an essential part of my daily workflow. It keeps my credentials encrypted, accessible across machines, and most importantly - I only need to remember one master password.
 
 The complete source code is available in my repository. Feel free to fork it, contribute, or suggest improvements!
-
----
 
 _Do you use a similar tool? What's your approach to managing SSH credentials? Let me know in the comments!_
