@@ -10,9 +10,10 @@ type Props = {
 
 export default function Blog({ data, tags }: Props) {
   const [filter, setFilter] = createSignal(new Set<string>())
-  const [posts, setPosts] = createSignal<CollectionEntry<"blog">[]>([])
+  const [posts, setPosts] = createSignal<CollectionEntry<"blog">[]>(data)
 
   createEffect(() => {
+    // Re-filter posts whenever data or filter changes
     setPosts(data.filter((entry) => 
       Array.from(filter()).every((value) => 
         entry.data.tags.some((tag:string) => 
