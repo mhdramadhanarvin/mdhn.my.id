@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from "astro:transitions"
+// import { ViewTransitions } from "astro:transitions"
 
 interface Props {
   title: string
@@ -55,6 +55,7 @@ const { title, description, image = "/open-graph.jpg" } = Astro.props
 <script is:inline src="/js/animate.js"></script>
 
 <!-- <ViewTransitions  /> -->
+<aside transition:name="hero">
 
 <script>
   import type { TransitionBeforeSwapEvent } from "astro:transitions/client"
